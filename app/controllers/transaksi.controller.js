@@ -55,7 +55,7 @@ exports.getSevenDays = (req, res) => {
       {
         date: {
           [Op.between]: [
-            moment().subtract(6, "days").toDate(),
+            moment().subtract(7, "days").toDate(),
             moment().add(1, "days").toDate()
           ]
         }
